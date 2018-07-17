@@ -1,15 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-##
- # Copyright (C) 2018 All rights reserved.
- #   
- # @File AbstractApi.py
- # @Brief 
- # @Author abelzhu, abelzhu@tencent.com
- # @Version 1.0
- # @Date 2018-02-24
- #
- #
+
  
 import sys
 import os
@@ -22,6 +13,7 @@ sys.path.append("../../")
 
 from conf import DEBUG
 
+// 自定义的异常类型， errcode: 错误码， errMsg: 错误信息
 class ApiException(Exception) :
     def __init__(self, errCode, errMsg) :
         self.errCode = errCode

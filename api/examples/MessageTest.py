@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 import sys
 sys.path.append("../src/")
@@ -15,7 +17,7 @@ try :
     response = api.httpCall(
             CORP_API_TYPE['MESSAGE_SEND'],
             {
-                "touser": "@all",
+                "touser": "任赛龙",
                 "agentid": 1000002,
                 'msgtype' : 'text',
                 'climsgid' : 'climsgidclimsgid_%f' % (random.random()),
