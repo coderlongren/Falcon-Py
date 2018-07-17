@@ -14,10 +14,11 @@ api = CorpApi(TestConf['CORP_ID'], TestConf['APP_SECRET'])
 
 try :
 ##
+    href = ""
     response = api.httpCall(
             CORP_API_TYPE['MESSAGE_SEND'],
             {
-                "touser": "任赛龙",
+                "touser": "2",
                 "agentid": 1000002,
                 'msgtype' : 'text',
                 'climsgid' : 'climsgidclimsgid_%f' % (random.random()),

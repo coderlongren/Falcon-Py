@@ -21,13 +21,19 @@ try :
                    "touser" : "@all",
                    "toparty" : "",
                    "totag" : "",
-                   "msgtype" : "textcard",
-                   "agentid" : 1,
-                   "textcard" : {
-                    "title" : "警告通知",
-                    "description" : "<div class=\"gray\">2016年9月26日</div> <div class=\"normal\">机器坏了</div><div class=\"highlight\">请即使排查错误</div>",
-                    "url" : "URL",
-                    "btntxt":"更多"
+                   "msgtype" : "news",
+                   "agentid" : 1000002,
+                   "news" : {
+                       "articles" : [
+                           {
+                               "title" : "中秋节礼品领取",
+                               "description" : "今年中秋节公司有豪礼相送",
+                               "url" : "URL",
+                               "picurl" : "http://res.mail.qq.com/node/ww/wwopenmng/images/independent/doc/test_pic_msg1.png",
+                               "btntxt":"更多"
+                           }
+                        ]
+                   }
            }
             })
     print response
