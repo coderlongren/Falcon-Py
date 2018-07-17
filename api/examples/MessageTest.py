@@ -27,16 +27,16 @@ try :
     response = api.httpCall(
             CORP_API_TYPE['MESSAGE_SEND'],
             {
-                "touser": "ZhuShengBen",
+                "touser": "@all",
                 "agentid": 1000002,
                 'msgtype' : 'text',
                 'climsgid' : 'climsgidclimsgid_%f' % (random.random()),
                 'text' : {
-                    'content':'方法论',
+                    'content':'哈哈',
                 },
                 'safe' : 0,
             })
-    print response 
+    print response
 except ApiException as e :
     print e.errCode, e.errMsg
 
