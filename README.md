@@ -1,8 +1,6 @@
 
 # About
 weworkapi_python 是为了简化开发者对企业微信API接口的使用而设计的，API调用库系列之python版本      
-本库仅做示范用，并不保证完全无bug；  
-作者会不定期更新本库，但不保证与官方API接口文档同步，因此一切以[官方文档](https://work.weixin.qq.com/api/doc)为准。
 
 # Director 
 
@@ -31,9 +29,6 @@ api.dosomething()
 api.dosomething()
 ....
 ```
-当然，如果要更严格的做的话，建议自行修改，全局缓存token，比如存redis、存文件等，失效周期设置为2小时。
 
-# Contact us
-abelzhu@tencent.com  
 
-# 
+
