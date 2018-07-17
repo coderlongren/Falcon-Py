@@ -13,7 +13,7 @@ sys.path.append("../../")
 
 from conf import DEBUG
 
-// 自定义的异常类型， errcode: 错误码， errMsg: 错误信息
+# 自定义的异常类型， errcode: 错误码， errMsg: 错误信息
 class ApiException(Exception) :
     def __init__(self, errCode, errMsg) :
         self.errCode = errCode
@@ -83,6 +83,7 @@ class AbstractApi(object) :
         else :
             return base + '/' + shortUrl 
 
+    # append  WX-token
     def __appendToken(self, url) : 
         if 'SUITE_ACCESS_TOKEN' in url :
             return url.replace('SUITE_ACCESS_TOKEN', self.getSuiteAccessToken())
